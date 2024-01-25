@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: TODO-MANAGER
+  datasource:
+    url: jdbc:postgresql://dpg-cmp2ht2cn0vc73cklkd0-a.oregon-postgres.render.com:5432/todos_database_p2ia
+    username: todos_database_p2ia_user
+    password: CKkEJDX19SWhBcyE4u4IoKZBuEw6djzn
