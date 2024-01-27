@@ -2,11 +2,14 @@ package com.todo.api.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Entity
-@Data
+@Getter
+@Setter
 public class Tasks {
 
     @Id
@@ -20,6 +23,7 @@ public class Tasks {
 
     private LocalDateTime updated;
 
+    private  boolean done;
     @ManyToOne
     @JoinColumn(name = "profile_id", nullable = false)
     private Profile profile;

@@ -2,11 +2,15 @@ package com.todo.api.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.annotations.Fetch;
 
 import java.util.List;
 
 @Entity
-@Data
+@Getter
+@Setter
 public class Profile {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
